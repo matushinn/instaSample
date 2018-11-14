@@ -35,7 +35,7 @@ class SignUpViewController: UIViewController ,UITextFieldDelegate{
     
     @IBAction func signUp(_ sender: Any) {
         let user = NCMBUser()
-        if (userIdTextField.text?.characters.count)! >= 4{
+        if (userIdTextField.text?.characters.count)! <= 4{
             print("文字数が足りません")
             //これ以上下は読まれない
             return
