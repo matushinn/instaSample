@@ -7,6 +7,8 @@ target 'instaSample' do
 
   # Pods for instaSample
 pod 'NCMB', :git => 'https://github.com/NIFCloud-mbaas/ncmb_ios.git'
+#これでリサイズできる
+pod 'NYXImagesKit'
 
 
 end

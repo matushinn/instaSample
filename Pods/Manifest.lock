@@ -1,8 +1,14 @@
 PODS:
   - NCMB (3.0.0)
+  - NYXImagesKit (2.3)
 
 DEPENDENCIES:
   - NCMB (from `https://github.com/NIFCloud-mbaas/ncmb_ios.git`)
+  - NYXImagesKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - NYXImagesKit
 
 EXTERNAL SOURCES:
   NCMB:
@@ -15,7 +21,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   NCMB: 53f7cd60388556330e18cc9196cbe4f897d5c091
+  NYXImagesKit: 8163e3335a40eaa173ca5bbbf81fafb57d3947eb
 
-PODFILE CHECKSUM: f99b45514dafd0e0edef66283f32471670d6a89c
+PODFILE CHECKSUM: 454366837d874ec262353bd56289f146c1232f4d
 
 COCOAPODS: 1.5.3
