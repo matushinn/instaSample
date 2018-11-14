@@ -1,0 +1,6 @@
+framework module Pods_instaSample {
+  umbrella header "Pods-instaSample-umbrella.h"
+
+  export *
+  module * { export * }
+}
