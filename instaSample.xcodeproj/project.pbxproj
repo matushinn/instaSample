@@ -16,6 +16,7 @@
 		37DD6B9D219BCDCB0019B27A /* SiginIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37DD6B9C219BCDCB0019B27A /* SiginIn.storyboard */; };
 		37DD6B9F219BD61F0019B27A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD6B9E219BD61F0019B27A /* SignUpViewController.swift */; };
 		37DD6BA1219BDC4A0019B27A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD6BA0219BDC4A0019B27A /* SignInViewController.swift */; };
+		37DD6BA3219BE28D0019B27A /* UserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD6BA2219BE28D0019B27A /* UserPageViewController.swift */; };
 		BC6E826D3B3E2480D63021BE /* Pods_instaSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8880288DB314F3E65256D608 /* Pods_instaSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		37DD6B9C219BCDCB0019B27A /* SiginIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SiginIn.storyboard; sourceTree = "<group>"; };
 		37DD6B9E219BD61F0019B27A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		37DD6BA0219BDC4A0019B27A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		37DD6BA2219BE28D0019B27A /* UserPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageViewController.swift; sourceTree = "<group>"; };
 		8880288DB314F3E65256D608 /* Pods_instaSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instaSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C061BD1E2964A4557B510620 /* Pods-instaSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instaSample/Pods-instaSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +83,7 @@
 				37DD6B9E219BD61F0019B27A /* SignUpViewController.swift */,
 				37DD6B8A219BC9340019B27A /* ViewController.swift */,
 				37DD6B8C219BC9340019B27A /* Main.storyboard */,
+				37DD6BA2219BE28D0019B27A /* UserPageViewController.swift */,
 				37DD6B9C219BCDCB0019B27A /* SiginIn.storyboard */,
 				37DD6BA0219BDC4A0019B27A /* SignInViewController.swift */,
 				37DD6B8F219BC9350019B27A /* Assets.xcassets */,
@@ -224,6 +227,7 @@
 			files = (
 				37DD6BA1219BDC4A0019B27A /* SignInViewController.swift in Sources */,
 				37DD6B9F219BD61F0019B27A /* SignUpViewController.swift in Sources */,
+				37DD6BA3219BE28D0019B27A /* UserPageViewController.swift in Sources */,
 				37DD6B8B219BC9340019B27A /* ViewController.swift in Sources */,
 				37DD6B89219BC9340019B27A /* AppDelegate.swift in Sources */,
 			);

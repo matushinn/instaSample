@@ -58,6 +58,10 @@ class SignUpViewController: UIViewController ,UITextFieldDelegate{
                 let rootViewController = storyboard.instantiateViewController(withIdentifier: "RootTabBarController")
                 //画面の切り替え
                 UIApplication.shared.keyWindow?.rootViewController = rootViewController
+                //ログインの保持
+                let ud = UserDefaults.standard
+                ud.set(true, forKey: "isLogin")
+                ud.synchronize()
             }
         }
     }
