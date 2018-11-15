@@ -11,10 +11,50 @@ import NCMB
 
 class UserPageViewController: UIViewController {
 
+    @IBOutlet weak var userImageView: UIImageView!
+    @IBOutlet var userDisplayNameLabel:UILabel!
+    @IBOutlet var userIntroductionTextView:UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //imageView丸くなる
+        userImageView.layer.cornerRadius = userImageView.bounds.width/2.0
+        userImageView.layer.masksToBounds = true
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        let user = NCMBUser.current()
+        if let user = NCMBUser.current(){
+            userDisplayNameLabel.text = user.object(forKey: "displayName") as? String
+            userIntroductionTextView.text = user.object(forKey: "introduction") as? String
+            self.navigationItem.title = user.userName
+            
+            let file = NCMBFile.file(withName: NCMBUser.current().objectId , data: nil) as! NCMBFile
+            file.getDataInBackground { (data, error) in
+                if error != nil{
+                    print(error)
+                }else{
+                    if data != nil{
+                        let image = UIImage(data: data!)
+                        self.userImageView.image = image
+                    }
+                    
+                }
+            }
+        }else{
+            //NCMBUser.current()がnillだった時
+            //ログアウト成功
+            let storyboard = UIStoryboard(name: "SiginIn", bundle: Bundle.main)
+            let rootViewController = storyboard.instantiateViewController(withIdentifier: "RootNavigationController")
+            //画面の切り替え
+            UIApplication.shared.keyWindow?.rootViewController = rootViewController
+            //ログイン状態の保持
+            let ud = UserDefaults.standard
+            ud.set(false, forKey: "isLogin")
+            ud.synchronize()
+            
+        }
+        
     }
     
     @IBAction func showMenu(_ sender: Any) {
